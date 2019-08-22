@@ -4,10 +4,10 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
 const fallbackLng = ['en']; 
-const availableLanguages = ['en', 'ru'];
+const availableLanguages = ['en', 'sv'];
 
 i18n
-  .use(Backend) // load translation using xhr -> see /public/locales. We will add locales in the next step
+  .use(Backend) // load translation using xhr
 
   .use(LanguageDetector) // detect user language
 

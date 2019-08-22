@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import WeatherForecast from './WeatherForecast'
 
 
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <Suspense fallback={(<div>Loading</div>)}>
+        <WeatherForecast/>
+      </Suspense>
     </>
   );
 }
